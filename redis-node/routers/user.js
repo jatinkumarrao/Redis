@@ -23,7 +23,7 @@ client.get("key",(err,data)=>{
 }
 router.get('/users',cache,async(req,res)=>{
     try{
-       const{ username}="User"
+      
      const users=  await User.find({ })
 
      const repos = users[0].Users
