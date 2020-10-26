@@ -2,7 +2,6 @@ const express=require('express')
 const User=require('../models/user')
 const router=new express.Router()
 const redis =require('redis');
-const auth=require("../middleware/auth")
 const REDIS_PORT= 6379;
 
 const client = redis.createClient(REDIS_PORT);
